@@ -54,3 +54,8 @@ You may want to take ownership of the files using `chown $USER:$USER -R download
 ### Flags
 
 `--debug : Enables additional output`
+
+### Known Issues
+
+- Does not work with Docker Snap
+  - The downloads are written to a volume instead of a mount, making them more cumbersome to access
