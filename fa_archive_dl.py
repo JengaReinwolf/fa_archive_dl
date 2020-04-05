@@ -111,7 +111,7 @@ def download_media(location, save_to, artist, proxies):
         )
         return True
     else:
-        log.info(f"Skipping file: {os.path.basepath(save_to)}: Already exists")
+        log.info(f"Skipping file: {os.path.basename(save_to)}: Already exists")
     return False
 
 
